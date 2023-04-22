@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4100/4100420.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url('/background.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            z-index: auto;
+            position: fixed;
+        }
+
+        nav ul {
+            display: flex;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav li {
+            padding: 30px;
+            margin: 10px 100px;
+            background-color: rgb(116, 216, 233);
+            box-shadow: 0px 5px 10px #555;
+            border-radius: 1rem;
+            transition: 0.3s;
+        }
+
+        nav li:hover {
+            box-shadow: 0px 0px 0px #555;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-image: url('/background.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+
+            nav ul {
+                display: flex;
+                text-align: center;
+                margin: 0;
+            }
+
+            nav li {
+                display: block;
+                margin: 10px 5px;
+                padding: 20px;
+                background-color: rgb(116, 216, 233);
+                box-shadow: 0px 5px 10px #555;
+                border-radius: 1rem;
+                transition: 0.3s;
+            }
+
+            nav li:hover {
+                box-shadow: 0px 0px 0px #555;
+            }
+
+            body {
+                background-size: cover;
+            }
+
+            section#projects img {
+                border-radius: 1rem;
+                width: 75%;
+            }
+        }
+
+        section {
+            padding-top: 6.5rem;
+            padding-left: 10px;
+        }
+
+        /* about */
+        section#about img {
+            width: 90px;
+        }
+
+        /* project */
+        section#projects img {
+            width: 50%;
+            border-radius: 1rem;
+        }
+
+        section#projects h3,
+        p,
+        img {
+            margin: 10px 30px;
+        }
+
+        /* skill */
+        section#skills #bar {
+            height: 25px;
+            background-color: #ddd;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 4px #555;
+            line-height: 1.5;
+        }
+
+        section#skills #progress1 {
+            height: 100%;
+            width: 40%;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 26px;
+            box-shadow: inset 0 1px 4px #555;
+        }
+
+        section#skills #progress2 {
+            height: 100%;
+            width: 30%;
+            background-color: #2196F3;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 26px;
+            box-shadow: inset 0 1px 4px #555;
+        }
+
+        section#skills #progress3 {
+            height: 100%;
+            width: 20%;
+            background-color: #f44336;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 26px;
+            box-shadow: inset 0 1px 4px #555;
+        }
+
+        section#skills ul {
+            margin: 30px 0;
+        }
+
+        section#skills ul li {
+            margin: 10px;
+        }
+
+        /* contact */
+        section#contact {
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+
+        section#contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        section#contact ul li h3 {
+            margin-bottom: 10px;
+        }
+
+        section#contact ul li p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input,
+        form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #555;
+        }
+
+        form textarea {
+            height: 150px;
+        }
+
+        form button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #777;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#skills">SKILLS</a>
+                </li>
+                <li>
+                    <a href="#projects">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="/profile.png" alt="">
+            <p>My name is Adrian James Q. Padilla I am a Web Developer. I like to watch movies and anime in my free
+                time.</p>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>
+                    <h3>HTML</h3>
+                    <div id="bar">
+                        <div id="progress1">40%</div>
+                    </div>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <div id="bar">
+                        <div id="progress2">30%</div>
+                    </div>
+                </li>
+                <li>
+                    <h3>JAVASCRIPT</h3>
+                    <div id="bar">
+                        <div id="progress3">20%</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <ul>
+                <li>
+                    <h3>PROJECT 1</h3>
+                    <p>LOG-IN PAGE</p>
+                    <img src="/login.png" alt="">
+                </li>
+                <li>
+                    <h3>PROJECT 2</h3>
+                    <p>CALCULATOR</p>
+                    <img src="/calculator.png" alt="">
+                </li>
+                <li>
+                    <h3>PROJECT 3</h3>
+                    <p>4 PAGE WEB</p>
+                    <img src="/fourpage.png" alt="">
+                </li>
+                <li>
+                    <h3>PROJECT 4</h3>
+                    <p>ADVERTISEMENT WEB</p>
+                    <img src="/advertise.png" alt="">
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <form>
+                <label for="">Name</label>
+                <input type="text">
+
+                <label for="">Email</label>
+                <input type="email" placeholder="example@gamil.com">
+
+                <label for="">Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
